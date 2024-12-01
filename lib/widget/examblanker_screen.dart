@@ -1,8 +1,7 @@
-import 'package:examblanker/widget/blanktext_container.dart';
-import 'package:examblanker/widget/textinput_container.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
-
+import 'textinput_container.dart';
+import 'blanktext_container.dart';
 
 class ExamBlankerScreen extends StatefulWidget {
   const ExamBlankerScreen({super.key});
