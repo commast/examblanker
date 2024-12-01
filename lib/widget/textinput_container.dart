@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class TextInputContainer extends StatelessWidget {
   final TextEditingController controller;
   final String label;
+  final bool enabled; // Add enabled property
 
   const TextInputContainer({
     required this.controller,
     required this.label,
+    this.enabled = true, // Default enabled is true
     super.key,
   });
 
@@ -34,6 +36,7 @@ class TextInputContainer extends StatelessWidget {
           Expanded(
             child: TextField(
               controller: controller,
+              enabled: enabled, // Use the enabled property
               maxLines: null,
               expands: true,
               decoration: const InputDecoration(
